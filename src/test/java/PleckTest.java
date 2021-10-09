@@ -12,6 +12,7 @@ public class PleckTest {
     public void before() {
         pleck = new Pleck(1, 2, "Dunno");
         shop = new Shop("Donald's Shop");
+        shop.addStock(pleck);
     }
 
     @Test
