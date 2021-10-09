@@ -23,4 +23,9 @@ public abstract class Stock implements ISell{
     public void setSalePrice(int salePrice) {
         this.salePrice = salePrice;
     }
+
+    public void sell(Shop shop) {
+        int profit = this.getSalePrice() - this.getPurchasePrice();
+        shop.increaseTill(profit);
+    }
 }
