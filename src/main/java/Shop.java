@@ -4,10 +4,28 @@ public class Shop {
 
     private String name;
     private ArrayList<ISell> stock;
+    private int till;
 
     public Shop(String name) {
         this.name = name;
         this.stock = new ArrayList<>();
+        this.till = 0;
+    }
+
+    public int getTill() {
+        return till;
+    }
+
+    public void setTill(int till) {
+        this.till = till;
+    }
+
+    public void increaseTill(int amount) {
+        this.till += amount;
+    }
+
+    public void decreaseTill(int amount) {
+        this.till -= amount;
     }
 
     public String getName() {
