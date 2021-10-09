@@ -2,7 +2,8 @@ public class Piano extends Instruments{
 
     public String brand;
 
-    public Piano(String brand) {
+    public Piano(int purchasePrice, int salePrice, String brand) {
+        super(purchasePrice, salePrice);
         this.brand = brand;
     }
 

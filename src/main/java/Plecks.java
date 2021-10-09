@@ -8,6 +8,6 @@ public class Plecks extends Stock{
     }
 
     public void sell(){
-        
+
     }
 }

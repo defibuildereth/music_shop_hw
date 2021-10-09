@@ -49,7 +49,7 @@ public class Shop {
     }
 
     public void removeStock(ISell item) {
-        private int index = this.stock.indexOf(item);
+        int index = this.stock.indexOf(item);
         this.stock.remove(index);
     }
 }
